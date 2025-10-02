@@ -61,6 +61,10 @@ public class SafeInput {
         return getValue(prompt, () -> scanner.nextDouble());
     }
 
+    public double nextDouble(String prompt, String tryAgain, double min, double max) {
+        return this.getValueWithLimits(prompt, () -> scanner.nextDouble(), tryAgain, min, max);
+    }
+
     public short nextShort(String prompt) {
         return getValue(prompt, () -> scanner.nextShort());
     }
