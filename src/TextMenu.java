@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public class Menu {
+public class TextMenu {
     public static int menu(String header, String[] options) {
         if (options.length < 1) {
             return -1;
