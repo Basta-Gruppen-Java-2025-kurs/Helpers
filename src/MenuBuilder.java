@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class MenuBuilder {
     private final ArrayList<String> items = new ArrayList<>();
@@ -38,14 +37,6 @@ public class MenuBuilder {
 
     public void runMenu() {
         TextMenu.menuLoop(header, items.toArray(new String[0]), callbacks.toArray(new Runnable[0]), singleShot);
-    }
-
-    public static void main(String[] args) {
-        MenuBuilder menu = new MenuBuilder();
-        menu    .setHeader("Test menu");
-        menu    .addItem("First", () -> System.out.println("First item"))
-                .addItem("Second", () -> System.out.println("You never guess"))
-                .runMenu();
     }
 
 }
