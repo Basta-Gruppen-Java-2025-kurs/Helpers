@@ -80,4 +80,20 @@ public class TableFormatter {
     public void setTableNote(String tableNote) {
         this.tableNote = tableNote;
     }
+
+    public String formatTitle(String... titleItems) {
+        return String.format(title, (Object[]) titleItems);
+    }
+
+    public String formatTitle() {
+        return title;
+    }
+
+    public String formatTableNote(String... noteItems) {
+        return String.format(tableNote, (Object[]) noteItems);
+    }
+
+    public String formatTableNote() {
+        return tableNote;
+    }
 }
