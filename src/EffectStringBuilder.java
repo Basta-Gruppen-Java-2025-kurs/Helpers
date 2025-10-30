@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.List;
 
 public class EffectStringBuilder {
     // based on https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
